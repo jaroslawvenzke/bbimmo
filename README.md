@@ -2,4 +2,5 @@ bbimmo
 ======
 
 bbimmo
-Immobilien
+
+Immobilien Smartphone App
