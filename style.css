@@ -14,3 +14,5 @@ BODY {
 max-width: 194px;
 max-height: 124px;
 }
+
+A { color: #8c0d68; border: 0px; -moz-outline: none; }
