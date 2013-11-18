@@ -36,9 +36,8 @@
         permission on your app, which PhoneGap requires.
     -->
     <!--<preference name="permissions" value="none"/>-->
-	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
-	
+		<preference name="android-minSdkVersion" value="7"/>
+		<preference name="ios-statusbarstyle" value="black-opaque" />
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="2.9.0" />          <!-- all: current version of PhoneGap -->
