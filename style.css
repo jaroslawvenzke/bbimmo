@@ -21,7 +21,7 @@ max-height: 270px;
 }
 
 #menubar {
-background: #ccc url(img/menubar_bg.png) repeat-x;
+background: url(img/menuebar_bg.png) repeat-x;
 height: 35px;
 width: 100%
 }
