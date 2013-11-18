@@ -19,10 +19,10 @@
           //'Device Version: ' + device.version + '<br />';
 		  
 		  
-         var ref = window.open('http://apache.org', '_blank', 'location=yes');
-         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-         ref.addEventListener('exit', function() { alert(event.type); });
+         var ref = window.open('http://apache.org', '_self', 'location=no', 'menubar=yes', 'resizable=no');
+        // ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+        // ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+         ref.addEventListener('exit', function() { alert('Möchten Sie die App wirklich beenden?'); });
     
       }
     </script>
