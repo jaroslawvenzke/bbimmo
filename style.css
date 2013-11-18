@@ -15,4 +15,9 @@ max-width: 194px;
 max-height: 124px;
 }
 
+#headersize {
+max-width: 640px;
+max-height: 270px;
+}
+
 A { color: #8c0d68; border: 0px; -moz-outline: none; }
