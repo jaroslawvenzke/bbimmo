@@ -12,13 +12,23 @@
       function onDeviceReady() {
         var element = document.getElementById('deviceProperties');
 
-        element.innerHTML = 'Device Name: ' + device.name + '<br />' +
-          'Device Cordova: ' + device.cordova + '<br />' +
-          'Device Platform: ' + device.platform + '<br />' +
-          'Device UUID: ' + device.uuid + '<br />' +
-          'Device Version: ' + device.version + '<br />';
+        //element.innerHTML = 'Device Name: ' + device.name + '<br />' +
+          //'Device Cordova: ' + device.cordova + '<br />' +
+          //'Device Platform: ' + device.platform + '<br />' +
+          //'Device UUID: ' + device.uuid + '<br />' +
+          //'Device Version: ' + device.version + '<br />';
+		  
+		  
+         var ref = window.open('http://apache.org', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+         ref.addEventListener('exit', function() { alert(event.type); });
+    
       }
     </script>
+	
+	
+	
   </head>
   
   <body>
