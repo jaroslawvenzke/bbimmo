@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Immobilien Video</title>
-<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-<link href='style.css' type='text/css' rel='stylesheet' media='all'>
-       
-</head>
+  <head>
+    <title>Immobilien Video</title>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      // Warten auf Cordova
+      document.addEventListener("deviceready", onDeviceReady, false);
+
+      // Cordova ist geladen.
+      function onDeviceReady() {
+        var element = document.getElementById('deviceProperties');
+
+        //element.innerHTML = 'Device Name: ' + device.name + '<br />' +
+          //'Device Cordova: ' + device.cordova + '<br />' +
+          //'Device Platform: ' + device.platform + '<br />' +
+          //'Device UUID: ' + device.uuid + '<br />' +
+          //'Device Version: ' + device.version + '<br />';
+		  
+		  
+         var ref = window.open('http://www.b-b-immobilien.com/_app/videos/video.php', '_self', 'location=no');
+        // ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+        // ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+        // ref.addEventListener('exit', function() { alert('Möchten Sie die App wirklich beenden?'); });
+    
+      }
+    </script>
+	
+	
+	
+  </head>
   
-<body>
-
-<table width="100%" align="center">
-<tr>
-	<td align="left"><a href="javascript:navigator.app.backHistory()" class="newSubmitButtonBack">< Zur&uuml;ck</a></td>
-</tr>
-</table>
-
-<br/>
-
-<table width="100%" align="center">
-<tr>
-	<td><img src="img/head.png" width="100%" id="headersize"></td>
-</tr>
-</table>
-
-<br/>
- 
-<table width="90%">
-<tr>
-	<td width="30%"><a href="http://www.immotell.de/pro/ext_app/bbimmo/form_detailsuche.php">Video 1</a></td>
-	<td width="30%"><a href="http://www.immotell.de/pro/ext_app/bbimmo/form_detailsuche.php">Video 2</a></td>
-	<td width="30%"><a href="http://www.immotell.de/pro/ext_app/bbimmo/form_detailsuche.php">Video 3</a></td>
-</tr>
-<tr>
-	<td width="30%"><a href="http://www.immotell.de/pro/ext_app/bbimmo/form_detailsuche.php">Video 4</a></td>
-	<td width="30%"><a href="http://www.immotell.de/pro/ext_app/bbimmo/form_detailsuche.php">Video 5</a></td>
-	<td width="30%"><a href="http://www.immotell.de/pro/ext_app/bbimmo/form_detailsuche.php">Video 6</a></td>
-</tr>
-</table>
-  
-  
-</body>
+  <body>
+    <p id="deviceProperties">App wird geladen...</p>
+  </body>
+<!--http://www.heise.de/developer/artikel/Cross-Plattform-Apps-mit-PhoneGap-entwickeln-1934535.html-->
 </html>
