@@ -28,6 +28,10 @@ max-width: 640px;
 max-height: 270px;
 }
 
+#videoIMGsize {
+max-width: 193px;
+}
+
 #menubar {
 background: url(img/menuebar_bg.png) repeat-x;
 height: 35px;
