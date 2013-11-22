@@ -6,8 +6,9 @@ HTML, BODY {
 }
 
 BODY {
-	font: 		12px Arial,Helvetica,sans-serif;
-	color: 		#000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+	color: 		#7b7c7e;
 }
 
 #menuebuttons {
