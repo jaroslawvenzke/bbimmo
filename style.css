@@ -7,7 +7,7 @@ HTML, BODY {
 
 BODY {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 	color: 		#7b7c7e;
 }
 
@@ -19,7 +19,7 @@ BODY {
 
 h1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 	color: 		#8c0d68;
 	font-weight: bold;
 }
