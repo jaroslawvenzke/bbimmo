@@ -3,12 +3,30 @@
   <head>
     <title>b&b Immobilien - Home</title>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8" src="childbrowser.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+ 
+    // Wait for PhoneGap to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+ 
+    // PhoneGap is ready
+    //
+		
+	function onDeviceReady() {
+	document.addEventListener("offline", onOffline, false);
+		
+		function onOffline() {
+		alert('ACHTUNG - es besteht keine Internetverbindung. Diese App benötigt eine Internetverbindung zur einwandfreien Wiedergabe. Es könnten in diesem Fall Störungen auftreten.')
+    }
+	}
+    </script>
 	<link href='style.css' type='text/css' rel='stylesheet' media='all'>
   </head>
   
-  <body>
+  <body onload="onLoad()">
 <table width="100%" align="center">
 <tr>
 	<td align="center"><img src="img/head.png" width="100%" id="headersize"></td>
@@ -24,17 +42,16 @@
 	<td width="30%" align="center"><a href="tel:496926493710"><img src="img/buttons_direkterdraht.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Anrufen</span></td>
 </tr>
 <tr>
-	<td width="30%" align="center"><a href="https://twitter.com/bbImmobilien" target="_blank"><img src="img/buttons_aktuelles.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Twitter</span></td>
+	<td width="30%" align="center"><a href="#" onclick="window.open('https://twitter.com/bbImmobilien', '_blank', 'location=yes');"><img src="img/buttons_aktuelles.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Twitter</span></td>
 	<td width="30%" align="center"><a href="kontakt.html"><img src="img/buttons_rueckruf.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Kontakt</span></td>
 	<td width="30%" align="center"><a href="journal.html"><img src="img/buttons_journal.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Journal</span></td>
 </tr>
 <tr>
-	<td width="30%" align="center"><a href="https://www.facebook.com/pages/bb-Immobilien/180127548756377" target="_blank"><img src="img/buttons_facebook.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Facebook</span></td>
-	<td width="30%" align="center"><a href="video_frame.html"><img src="img/buttons_video.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Videos</span></td>
-	<td width="30%" align="center"><a href="http://www.b-b-immobilien.com/_app/magazin/tcpdf/examples/example_002.php"><img src="img/buttons_katalog.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Magazin</span></td>
+	<td width="30%" align="center"><a href="#" onclick="window.open('https://www.facebook.com/pages/bb-Immobilien/180127548756377', '_blank', 'location=yes');"><img src="img/buttons_facebook.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Facebook</span></td>
+	<td width="30%" align="center"><a href="#" onclick="window.open('http://www.youtube.com/user/bbimmogmbh', '_blank', 'location=yes');"><img src="img/buttons_video.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Videos</span></td>
+	<td width="30%" align="center"><a href="#" onclick="window.open('http://www.b-b-immobilien.com/_app/magazin/tcpdf/examples/example_002.php', '_blank', 'location=yes');"><img src="img/buttons_katalog.jpg" id="menuebuttons" width="100%"></a><br><span class="menusize">Magazin</span></td>
 </tr>
 </table>
 
   </body>
-<!--http://www.heise.de/developer/artikel/Cross-Plattform-Apps-mit-PhoneGap-entwickeln-1934535.html-->
 </html>
